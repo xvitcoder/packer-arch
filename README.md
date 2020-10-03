@@ -2,8 +2,6 @@
 
 ### Create virtualbox image
 ```
-git clone https://github.com/elasticdog/packer-arch.git
-cd packer-arch/
 packer build -only=virtualbox-iso arch-template.json
 ```
 ### Add the virtualbox to vagrant
