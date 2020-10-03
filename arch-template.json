@@ -5,7 +5,7 @@
         "ssh_timeout": "20m",
         "country": "US",
         "write_zeros": "true",
-        "headless": "false"
+        "headless": "true"
     },
     "builders": [
         {
@@ -55,7 +55,7 @@
     "post-processors": [
         {
             "type": "vagrant",
-            "output": "output/packer_arch_{{ .Provider }}-{{isotime \"2006.01\"}}.01.box"
+            "output": "output/packer_arch_virtualbox.box"
         }
     ]
 }
